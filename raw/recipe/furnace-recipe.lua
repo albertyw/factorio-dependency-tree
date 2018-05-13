@@ -1,5 +1,3 @@
-data:extend(
-{
   {
     type = "recipe",
     name = "steel-plate",
@@ -19,5 +17,3 @@ data:extend(
       result = "steel-plate"
     }
   }
-}
-)

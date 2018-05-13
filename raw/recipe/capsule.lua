@@ -1,6 +1,3 @@
-
-data:extend(
-{
   {
     type = "recipe",
     name = "poison-capsule",
@@ -120,4 +117,3 @@ data:extend(
     },
     result = "artillery-targeting-remote"
   },
-})

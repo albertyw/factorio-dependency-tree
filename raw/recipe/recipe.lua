@@ -1,5 +1,3 @@
-data:extend(
-{
   {
     type = "recipe",
     name = "player-port",
@@ -1457,5 +1455,3 @@ data:extend(
     ingredients = {{"iron-gear-wheel", 50}, {"copper-plate", 50}, {"pipe", 20}},
     result = "steam-turbine"
   }
-}
-)

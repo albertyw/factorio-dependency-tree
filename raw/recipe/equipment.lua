@@ -1,5 +1,3 @@
-data:extend(
-{
   {
     type = "recipe",
     name = "night-vision-equipment",
@@ -149,5 +147,3 @@ data:extend(
     },
     result = "personal-roboport-mk2-equipment"
   }
-}
-)

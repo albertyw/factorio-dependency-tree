@@ -1,5 +1,3 @@
-data:extend(
-{
   {
     type = "recipe",
     name = "long-handed-inserter",
@@ -59,5 +57,3 @@ data:extend(
     },
     result = "stack-filter-inserter",
   }
-}
-)

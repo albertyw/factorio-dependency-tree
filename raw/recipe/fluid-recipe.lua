@@ -1,7 +1,3 @@
-
-
-data:extend(
-{
   {
     type = "recipe",
     name = "basic-oil-processing",
@@ -317,4 +313,3 @@ data:extend(
       {type="item", name="empty-barrel", amount=1}
     },
   }
-})

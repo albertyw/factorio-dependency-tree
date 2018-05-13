@@ -1,5 +1,3 @@
-data:extend(
-{
   {
     type = "recipe",
     name = "piercing-rounds-magazine",
@@ -213,5 +211,3 @@ data:extend(
       tertiary = {r = 0.685, g = 0.329, b = 0.000, a = 0.000}, -- #ae530000
     }
   }
-}
-)
