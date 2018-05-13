@@ -21,13 +21,18 @@ def return_tech_dependency_tree(techs):
 
 
 def save_tech_dependency_tree(tree):
+    matrix = []
+    for key, value in tree.items():
+        row = [key] + value
+        matrix.append(row)
+    matrix = sorted(matrix, key=lambda x: x[0])
+    matrix = sorted(matrix, key=lambda x: len(x))
     with open('data/technology.csv', 'w') as handle:
         writer = csv.writer(handle)
-        for key, value in tree.items():
-            row = [key] + value
+        for row in matrix:
             writer.writerow(row)
 
 
 tree = return_tech_dependency_tree(technology)
 save_tech_dependency_tree(tree)
-print(len(tree))
+print('Wrote %s items' % len(tree))
