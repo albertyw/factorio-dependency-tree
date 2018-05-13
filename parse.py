@@ -12,6 +12,5 @@ while x < len(technology_list):
     x += 1
 
 technology_string = ''.join(technology_list)
-print(technology_string)
 technology = lua.decode(technology_string)
 print(len(technology))
