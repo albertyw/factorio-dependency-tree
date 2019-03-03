@@ -1,3 +1,5 @@
+data:extend(
+{
   {
     type = "recipe",
     name = "piercing-rounds-magazine",
@@ -55,7 +57,7 @@
     energy_required = 50,
     ingredients =
     {
-      {"processing-unit", 20},
+      {"rocket-control-unit", 10},
       {"explosives", 10},
       {"uranium-235", 30}
     },
@@ -109,9 +111,9 @@
       {
         {"steel-plate", 2},
         {"plastic-bar", 2},
-        {"explosives", 1},
+        {"explosives", 1}
       },
-      result = "cannon-shell",
+      result = "cannon-shell"
     },
     expensive =
     {
@@ -121,9 +123,9 @@
       {
         {"steel-plate", 4},
         {"plastic-bar", 4},
-        {"explosives", 1},
+        {"explosives", 1}
       },
-      result = "cannon-shell",
+      result = "cannon-shell"
     }
   },
   {
@@ -137,7 +139,7 @@
       {
         {"steel-plate", 2},
         {"plastic-bar", 2},
-        {"explosives", 2},
+        {"explosives", 2}
       },
       result = "explosive-cannon-shell"
     },
@@ -149,10 +151,10 @@
       {
         {"steel-plate", 4},
         {"plastic-bar", 4},
-        {"explosives", 2},
+        {"explosives", 2}
       },
       result = "explosive-cannon-shell"
-    },
+    }
   },
   {
     type = "recipe",
@@ -187,7 +189,7 @@
     {
       {"explosive-cannon-shell", 4},
       {"radar", 1},
-      {"explosives", 8},
+      {"explosives", 8}
     },
     result = "artillery-shell"
   },
@@ -211,3 +213,5 @@
       tertiary = {r = 0.685, g = 0.329, b = 0.000, a = 0.000}, -- #ae530000
     }
   }
+}
+)

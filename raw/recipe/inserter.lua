@@ -1,3 +1,5 @@
+data:extend(
+{
   {
     type = "recipe",
     name = "long-handed-inserter",
@@ -8,7 +10,7 @@
       {"iron-plate", 1},
       {"inserter", 1}
     },
-    result = "long-handed-inserter",
+    result = "long-handed-inserter"
   },
   {
     type = "recipe",
@@ -20,7 +22,7 @@
       {"iron-plate", 2},
       {"inserter", 1}
     },
-    result = "fast-inserter",
+    result = "fast-inserter"
   },
   {
     type = "recipe",
@@ -31,7 +33,7 @@
       {"fast-inserter", 1},
       {"electronic-circuit", 4}
     },
-    result = "filter-inserter",
+    result = "filter-inserter"
   },
   {
     type = "recipe",
@@ -44,7 +46,7 @@
       {"advanced-circuit", 1},
       {"fast-inserter", 1}
     },
-    result = "stack-inserter",
+    result = "stack-inserter"
   },
   {
     type = "recipe",
@@ -55,5 +57,7 @@
       {"stack-inserter", 1},
       {"electronic-circuit", 5}
     },
-    result = "stack-filter-inserter",
+    result = "stack-filter-inserter"
   }
+}
+)

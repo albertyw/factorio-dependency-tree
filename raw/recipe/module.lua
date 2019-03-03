@@ -1,3 +1,5 @@
+data:extend(
+{
   {
     type = "recipe",
     name = "speed-module",
@@ -112,3 +114,5 @@
     energy_required = 60,
     result = "effectivity-module-3"
   }
+}
+)

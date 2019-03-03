@@ -1,3 +1,5 @@
+data:extend(
+{
   {
     type = "recipe",
     name = "player-port",
@@ -33,7 +35,7 @@
       {
         {"iron-gear-wheel", 10},
         {"fast-transport-belt", 1},
-        {type="fluid", name="lubricant", amount=20},
+        {type="fluid", name="lubricant", amount=20}
       },
       result = "express-transport-belt"
     },
@@ -44,10 +46,10 @@
       {
         {"iron-gear-wheel", 20},
         {"fast-transport-belt", 1},
-        {type="fluid", name="lubricant", amount=20},
+        {type="fluid", name="lubricant", amount=20}
       },
-      result = "express-transport-belt",
-    },
+      result = "express-transport-belt"
+    }
   },
   {
     type = "recipe",
@@ -70,12 +72,12 @@
       enabled = false,
       ingredients =
       {
-        {"iron-plate", 9},
+        {"steel-plate", 2},
         {"electronic-circuit", 3},
         {"iron-gear-wheel", 5},
         {"assembling-machine-1", 1}
       },
-      result = "assembling-machine-2",
+      result = "assembling-machine-2"
     },
     expensive =
     {
@@ -87,8 +89,8 @@
         {"iron-gear-wheel", 10},
         {"assembling-machine-1", 1}
       },
-      result = "assembling-machine-2",
-    },
+      result = "assembling-machine-2"
+    }
   },
   {
     type = "recipe",
@@ -155,7 +157,7 @@
       {"steel-plate", 1}
     },
     result = "rail",
-    result_count = 2,
+    result_count = 2
   },
   {
     type = "recipe",
@@ -219,7 +221,8 @@
     ingredients =
     {
       {"electronic-circuit", 5},
-      {"iron-plate", 10},
+      {"iron-plate", 6},
+      {"iron-stick", 6},
       {"steel-plate", 3}
     },
     result = "train-stop"
@@ -233,7 +236,7 @@
       {"electronic-circuit", 1},
       {"iron-plate", 5}
     },
-    result = "rail-signal",
+    result = "rail-signal"
   },
   {
     type = "recipe",
@@ -244,7 +247,7 @@
       {"electronic-circuit", 1},
       {"iron-plate", 5}
     },
-    result = "rail-chain-signal",
+    result = "rail-chain-signal"
   },
   {
     type = "recipe",
@@ -280,7 +283,7 @@
     name = "power-armor-mk2",
     enabled = false,
     energy_required = 25,
-    ingredients = {{ "effectivity-module-3", 5}, {"speed-module-3", 5}, {"processing-unit", 40}, {"steel-plate", 40}},
+    ingredients = {{ "effectivity-module-2", 25}, {"speed-module-2", 25}, {"processing-unit", 60}, {"electric-engine-unit", 40}, {"low-density-structure", 30}},
     result = "power-armor-mk2",
     requester_paste_multiplier = 1
   },
@@ -289,14 +292,14 @@
     name = "iron-chest",
     enabled = true,
     ingredients = {{"iron-plate", 8}},
-    result = "iron-chest",
+    result = "iron-chest"
   },
   {
     type = "recipe",
     name = "steel-chest",
     enabled = false,
     ingredients = {{"steel-plate", 8}},
-    result = "steel-chest",
+    result = "steel-chest"
   },
   {
     type = "recipe",
@@ -388,44 +391,46 @@
       {"steel-plate", 15},
       {"copper-plate", 15},
       {"electronic-circuit", 10},
-      {"advanced-circuit", 5},
+      {"advanced-circuit", 5}
     },
     result = "railgun"
   },
   {
     type = "recipe",
-    name = "science-pack-1",
+    name = "automation-science-pack",
     energy_required = 5,
     ingredients =
     {
       {"copper-plate", 1},
       {"iron-gear-wheel", 1}
     },
-    result = "science-pack-1"
+    result = "automation-science-pack"
   },
   {
     type = "recipe",
-    name = "science-pack-2",
+    name = "logistic-science-pack",
+    enabled = false,
     energy_required = 6,
     ingredients =
     {
       {"inserter", 1},
       {"transport-belt", 1}
     },
-    result = "science-pack-2"
+    result = "logistic-science-pack"
   },
   {
     type = "recipe",
-    name = "science-pack-3",
+    name = "chemical-science-pack",
     enabled = false,
-    energy_required = 12,
+    energy_required = 24,
     ingredients =
     {
-      {"advanced-circuit", 1},
-      {"engine-unit", 1},
-      {"electric-mining-drill", 1},
+      {"engine-unit", 2},
+      {"advanced-circuit", 3},
+      {"solid-fuel", 1}
     },
-    result = "science-pack-3"
+    result_count = 2,
+    result = "chemical-science-pack"
   },
   {
     type = "recipe",
@@ -436,38 +441,38 @@
     {
       {"piercing-rounds-magazine", 1},
       {"grenade", 1},
-      {"gun-turret", 1}
+      {"stone-wall", 2}
     },
     result_count = 2,
-    result = "military-science-pack",
+    result = "military-science-pack"
   },
   {
     type = "recipe",
     name = "production-science-pack",
     enabled = false,
-    energy_required = 14,
+    energy_required = 21,
     ingredients =
     {
-     {"electric-engine-unit", 1},
-     {"electric-furnace", 1}
+     {"electric-furnace", 1},
+     {"productivity-module", 1},
+     {"rail", 30}
     },
-    result_count = 2,
-    result = "production-science-pack",
+    result_count = 3,
+    result = "production-science-pack"
   },
   {
     type = "recipe",
-    name = "high-tech-science-pack",
+    name = "utility-science-pack",
     enabled = false,
-    energy_required = 14,
+    energy_required = 21,
     ingredients =
     {
-      {"battery", 1},
-      {"processing-unit", 3},
-      {"speed-module", 1},
-      {"copper-cable", 30}
+      {"low-density-structure", 3},
+      {"processing-unit", 2},
+      {"flying-robot-frame", 1}
     },
-    result_count = 2,
-    result = "high-tech-science-pack",
+    result_count = 3,
+    result = "utility-science-pack"
   },
 
   {
@@ -515,7 +520,7 @@
       {"transport-belt", 5}
     },
     result_count = 2,
-    result = "underground-belt",
+    result = "underground-belt"
   },
   {
     type = "recipe",
@@ -528,7 +533,7 @@
       {"underground-belt", 2}
     },
     result_count = 2,
-    result = "fast-underground-belt",
+    result = "fast-underground-belt"
   },
   {
     type = "recipe",
@@ -540,7 +545,7 @@
     {
       {"iron-gear-wheel", 80},
       {"fast-underground-belt", 2},
-      {type="fluid", name="lubricant", amount=40},
+      {type="fluid", name="lubricant", amount=40}
     },
     result_count = 2,
     result = "express-underground-belt"
@@ -595,7 +600,7 @@
       {"iron-plate", 5},
       {"transport-belt", 4}
     },
-    result = "splitter",
+    result = "splitter"
   },
   {
     type = "recipe",
@@ -608,7 +613,7 @@
       {"iron-gear-wheel", 10},
       {"electronic-circuit", 10}
     },
-    result = "fast-splitter",
+    result = "fast-splitter"
   },
   {
     type = "recipe",
@@ -638,7 +643,7 @@
         {"plastic-bar", 2},
         {"copper-cable", 4}
       },
-      result = "advanced-circuit",
+      result = "advanced-circuit"
     },
     expensive =
     {
@@ -650,7 +655,7 @@
         {"plastic-bar", 4},
         {"copper-cable", 8}
       },
-      result = "advanced-circuit",
+      result = "advanced-circuit"
     }
   },
   {
@@ -714,7 +719,7 @@
       {"electronic-circuit", 3},
       {"advanced-circuit", 1}
     },
-    result = "logistic-chest-passive-provider",
+    result = "logistic-chest-passive-provider"
   },
   {
     type = "recipe",
@@ -726,7 +731,7 @@
       {"electronic-circuit", 3},
       {"advanced-circuit", 1}
     },
-    result = "logistic-chest-active-provider",
+    result = "logistic-chest-active-provider"
   },
   {
     type = "recipe",
@@ -738,7 +743,7 @@
       {"electronic-circuit", 3},
       {"advanced-circuit", 1}
     },
-    result = "logistic-chest-storage",
+    result = "logistic-chest-storage"
   },
   {
     type = "recipe",
@@ -750,7 +755,7 @@
       {"electronic-circuit", 3},
       {"advanced-circuit", 1}
     },
-    result = "logistic-chest-buffer",
+    result = "logistic-chest-buffer"
   },
   {
     type = "recipe",
@@ -762,7 +767,7 @@
       {"electronic-circuit", 3},
       {"advanced-circuit", 1}
     },
-    result = "logistic-chest-requester",
+    result = "logistic-chest-requester"
   },
   {
     type = "recipe",
@@ -791,18 +796,7 @@
       {"iron-gear-wheel", 45},
       {"advanced-circuit", 45}
     },
-    result = "roboport",
-  },
-  {
-    type = "recipe",
-    name = "steel-axe",
-    enabled = false,
-    ingredients =
-    {
-      {"steel-plate", 5},
-      {"iron-stick", 2}
-    },
-    result = "steel-axe",
+    result = "roboport"
   },
   {
     type = "recipe",
@@ -810,10 +804,11 @@
     enabled = false,
     ingredients =
     {
+      {"iron-stick", 8},
       {"steel-plate", 5},
       {"copper-plate", 5}
     },
-    result = "big-electric-pole",
+    result = "big-electric-pole"
   },
   {
     type = "recipe",
@@ -833,10 +828,11 @@
     enabled = false,
     ingredients =
     {
+      {"iron-stick", 4},
       {"steel-plate", 2},
       {"copper-plate", 2}
     },
-    result = "medium-electric-pole",
+    result = "medium-electric-pole"
   },
   {
     type = "recipe",
@@ -889,7 +885,7 @@
       {"steel-plate", 5},
       {"iron-gear-wheel", 10},
       {"electronic-circuit", 5},
-      {"pipe", 10},
+      {"pipe", 10}
     },
     result = "pumpjack",
     enabled = false
@@ -963,16 +959,16 @@
     },
     normal =
     {
-      energy_required = 5,
+      energy_required = 4,
       enabled = false,
       ingredients =
       {
         {type="item", name="sulfur", amount=1},
         {type="item", name="coal", amount=1},
-        {type="fluid", name="water", amount=10},
+        {type="fluid", name="water", amount=10}
       },
       result= "explosives",
-      result_count = 2,
+      result_count = 2
     },
     expensive =
     {
@@ -982,10 +978,10 @@
       {
         {type="item", name="sulfur", amount=2},
         {type="item", name="coal", amount=2},
-        {type="fluid", name="water", amount=10},
+        {type="fluid", name="water", amount=10}
       },
       result= "explosives",
-      result_count = 2,
+      result_count = 2
     }
   },
   {
@@ -994,7 +990,7 @@
     category = "chemistry",
     normal =
     {
-      energy_required = 5,
+      energy_required = 4,
       enabled = false,
       ingredients =
       {
@@ -1002,7 +998,7 @@
         {"iron-plate", 1},
         {"copper-plate", 1}
       },
-      result= "battery"
+      result = "battery"
     },
     expensive =
     {
@@ -1084,7 +1080,7 @@
     ingredients =
     {
       {"copper-cable", 5},
-      {"electronic-circuit", 5},
+      {"electronic-circuit", 5}
     },
     result = "arithmetic-combinator"
   },
@@ -1095,7 +1091,7 @@
     ingredients =
     {
       {"copper-cable", 5},
-      {"electronic-circuit", 5},
+      {"electronic-circuit", 5}
     },
     result = "decider-combinator"
   },
@@ -1106,7 +1102,7 @@
     ingredients =
     {
       {"copper-cable", 5},
-      {"electronic-circuit", 2},
+      {"electronic-circuit", 2}
     },
     result = "constant-combinator"
   },
@@ -1119,7 +1115,7 @@
     {
       {"iron-plate", 5},
       {"copper-cable", 5},
-      {"electronic-circuit", 2},
+      {"electronic-circuit", 2}
     },
     result = "power-switch"
   },
@@ -1130,9 +1126,10 @@
     energy_required = 2,
     ingredients =
     {
-      {"iron-plate", 5},
+      {"iron-plate", 3},
+      {"iron-stick", 4},
       {"copper-cable", 5},
-      {"electronic-circuit", 4},
+      {"electronic-circuit", 4}
     },
     result = "programmable-speaker"
   },
@@ -1142,28 +1139,28 @@
     category = "crafting",
     normal =
     {
-      energy_required = 30,
+      energy_required = 20,
       enabled = false,
       ingredients =
       {
-        {"steel-plate", 10},
-        {"copper-plate", 5},
+        {"steel-plate", 2},
+        {"copper-plate", 20},
         {"plastic-bar", 5}
       },
       result= "low-density-structure"
     },
     expensive =
     {
-      energy_required = 30,
+      energy_required = 20,
       enabled = false,
       ingredients =
       {
-        {"steel-plate", 10},
-        {"copper-plate", 10},
-        {"plastic-bar", 10}
+        {"steel-plate", 2},
+        {"copper-plate", 20},
+        {"plastic-bar", 30}
       },
       result= "low-density-structure"
-    },
+    }
   },
   {
     type = "recipe",
@@ -1201,7 +1198,7 @@
     {
       {"rocket-control-unit", 10},
       {"low-density-structure", 10},
-      {"rocket-fuel", 10},
+      {"rocket-fuel", 10}
     },
     result= "rocket-part"
   },
@@ -1315,7 +1312,7 @@
       {"concrete", 500},
       {"steel-plate", 500},
       {"advanced-circuit", 500},
-      {"copper-plate", 500},
+      {"copper-plate", 500}
     },
     result = "nuclear-reactor",
     requester_paste_multiplier = 1
@@ -1330,15 +1327,15 @@
       {"concrete", 100},
       {"steel-plate", 50},
       {"advanced-circuit", 100},
-      {"iron-gear-wheel", 100},
+      {"iron-gear-wheel", 100}
     },
     result = "centrifuge",
-    requester_paste_multiplier= 10,
+    requester_paste_multiplier= 10
   },
   {
     type = "recipe",
     name = "uranium-processing",
-    energy_required = 10,
+    energy_required = 12,
     enabled = false,
     category = "centrifuging",
     ingredients = {{"uranium-ore", 10}},
@@ -1363,7 +1360,7 @@
   {
     type = "recipe",
     name = "kovarex-enrichment-process",
-    energy_required = 50,
+    energy_required = 60,
     enabled = false,
     category = "centrifuging",
     ingredients = {{"uranium-235", 40}, {"uranium-238", 5}},
@@ -1372,34 +1369,24 @@
     subgroup = "intermediate-product",
     order = "r[uranium-processing]-c[kovarex-enrichment-process]",
     main_product = "",
-    results =
-    {
-      {
-        name = "uranium-235",
-        amount = 41
-      },
-      {
-        name = "uranium-238",
-        amount = 2
-      }
-    },
+    results = {{"uranium-235", 41}, {"uranium-238", 2}},
     allow_decomposition = false
   },
   {
     type = "recipe",
     name = "nuclear-fuel",
-    energy_required = 60,
+    energy_required = 90,
     enabled = false,
     category = "centrifuging",
     ingredients = {{"uranium-235", 1}, {"rocket-fuel", 1}},
     icon = "__base__/graphics/icons/nuclear-fuel.png",
     icon_size = 32,
-    result = "nuclear-fuel",
+    result = "nuclear-fuel"
   },
   {
     type = "recipe",
     name = "nuclear-fuel-reprocessing",
-    energy_required = 50,
+    energy_required = 60,
     enabled = false,
     category = "centrifuging",
     ingredients = {{"used-up-uranium-fuel-cell", 5}},
@@ -1408,13 +1395,7 @@
     subgroup = "intermediate-product",
     order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]",
     main_product = "",
-    results =
-    {
-      {
-        name = "uranium-238",
-        amount = 3
-      }
-    },
+    results = {{"uranium-238", 3}},
     allow_decomposition = false
   },
   {
@@ -1455,3 +1436,5 @@
     ingredients = {{"iron-gear-wheel", 50}, {"copper-plate", 50}, {"pipe", 20}},
     result = "steam-turbine"
   }
+}
+)

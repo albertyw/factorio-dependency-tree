@@ -1,3 +1,6 @@
+
+data:extend(
+{
   {
     type = "recipe",
     name = "poison-capsule",
@@ -7,7 +10,7 @@
     {
       {"steel-plate", 3},
       {"electronic-circuit", 3},
-      {"coal", 10},
+      {"coal", 10}
     },
     result = "poison-capsule"
   },
@@ -20,7 +23,7 @@
     {
       {"steel-plate", 2},
       {"electronic-circuit", 2},
-      {"coal", 5},
+      {"coal", 5}
     },
     result = "slowdown-capsule"
   },
@@ -32,7 +35,7 @@
     ingredients =
     {
       {"iron-plate", 5},
-      {"coal", 10},
+      {"coal", 10}
     },
     result = "grenade"
   },
@@ -45,7 +48,7 @@
     {
       {"grenade", 7},
       {"explosives", 5},
-      {"steel-plate", 5},
+      {"steel-plate", 5}
     },
     result = "cluster-grenade"
   },
@@ -57,8 +60,8 @@
     ingredients =
     {
       {"piercing-rounds-magazine", 1},
-      {"electronic-circuit", 2},
-      {"iron-gear-wheel", 3},
+      {"flying-robot-frame", 1},
+      {"iron-gear-wheel", 3}
     },
     result = "defender-capsule"
   },
@@ -70,7 +73,7 @@
     ingredients =
     {
       {"defender-capsule", 4},
-      {"advanced-circuit", 3},
+      {"advanced-circuit", 3}
     },
     result = "distractor-capsule"
   },
@@ -102,7 +105,7 @@
     {
       {"explosives", 10},
       {"grenade", 1},
-      {"empty-barrel", 1},
+      {"empty-barrel", 1}
     },
     result = "cliff-explosives"
   },
@@ -116,4 +119,5 @@
       {"radar", 1}
     },
     result = "artillery-targeting-remote"
-  },
+  }
+})

@@ -1,3 +1,5 @@
+data:extend(
+{
   {
     type = "recipe",
     name = "laser-turret",
@@ -39,3 +41,5 @@
     },
     result = "artillery-turret"
   }
+}
+)
