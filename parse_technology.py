@@ -1,11 +1,30 @@
 import csv
+import os
+
 from slpp import slpp as lua
 
 
-with open('raw/technology2.lua', 'r') as handle:
-    technology_string = handle.read()
+"""
+files = os.listdir('raw/technology')
+technology_string = ''
+for filename in files:
+    if filename[:5] == 'demo-':
+        continue
+    with open('raw/technology/%s' % filename, 'r') as handle:
+        technology_string += handle.read() + ','
 
+technology_string = '{' + technology_string[:-1] + '}'
 technology = lua.decode(technology_string)
+technology = [t for d in technology for t in d]
+"""
+
+
+with open('raw/technology/technology.lua', 'r') as handle:
+    technology_string = handle.read()
+technology_string = '{' + technology_string[:-1] + '}'
+technology = lua.decode(technology_string)
+technology = [t.values() for t in technology if type(t) == dict]
+technology = [t for d in technology for t in d]
 
 
 def return_tech_dependency_tree(techs):
