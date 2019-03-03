@@ -1,5 +1,6 @@
 import csv
 import os
+import pprint
 
 from slpp import slpp as lua
 
@@ -7,11 +8,15 @@ from slpp import slpp as lua
 files = os.listdir('raw/recipe')
 recipes_string = ''
 for filename in files:
+    if filename[:5] == 'demo-':
+        continue
     with open('raw/recipe/%s' % filename, 'r') as handle:
         recipes_string += handle.read() + ','
 
 recipes_string = '{' + recipes_string[:-1] + '}'
 recipes = lua.decode(recipes_string)
+recipes = [r for d in recipes for r in d]
+recipes = [r for r in recipes if r != ')']
 
 
 def return_recipe_dependency_tree(recipes):
