@@ -7,6 +7,8 @@ from slpp import slpp as lua
 files = os.listdir('raw/recipe')
 recipes_string = ''
 for filename in files:
+    if filename[:5] == 'demo-':
+        continue
     with open('raw/recipe/%s' % filename, 'r') as handle:
         recipes_string += handle.read() + ','
 
