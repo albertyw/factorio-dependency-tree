@@ -1,5 +1,6 @@
 import csv
 import os
+import pprint
 
 from slpp import slpp as lua
 
@@ -14,6 +15,8 @@ for filename in files:
 
 recipes_string = '{' + recipes_string[:-1] + '}'
 recipes = lua.decode(recipes_string)
+recipes = [r for d in recipes for r in d]
+recipes = [r for r in recipes if r != ')']
 
 
 def return_recipe_dependency_tree(recipes):
