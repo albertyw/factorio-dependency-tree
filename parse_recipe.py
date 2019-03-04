@@ -1,6 +1,5 @@
 import csv
 import os
-import pprint
 
 from slpp import slpp as lua
 
