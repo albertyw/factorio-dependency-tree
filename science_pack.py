@@ -2,7 +2,9 @@
 Generate a list of all materials needed to produce science packs
 """
 
+import copy
 import csv
+import pprint
 
 recipes = {}
 with open('data/recipes.csv') as handle:
@@ -12,6 +14,7 @@ with open('data/recipes.csv') as handle:
 
 science_packs = [r for r in recipes.keys() if 'science-pack' in r]
 print(science_packs)
+recipes['science-packs'] = science_packs
 
 
 def get_dependencies(recipe):
@@ -20,10 +23,21 @@ def get_dependencies(recipe):
     return recipes.get(recipe, [])
 
 
-dependencies = science_packs
-i = 0
-while i < len(dependencies):
-    dependencies += [r for r in get_dependencies(dependencies[i]) if r not in dependencies]
-    i += 1
+def traverse_list(dependency):
+    dependencies = [dependency]
+    i = 0
+    while i < len(dependencies):
+        dependencies += [r for r in get_dependencies(dependencies[i]) if r not in dependencies]
+        i += 1
+    return dependencies
 
-print(dependencies)
+def traverse_tree(dependency):
+    children = get_dependencies(dependency)
+    children = [traverse_tree(d) for d in children]
+    return {dependency: children}
+
+
+dependencies = traverse_list('science-packs')
+dependencies = traverse_tree('science-packs')
+
+pprint.pprint(dependencies, width=1)
