@@ -38,6 +38,4 @@ def traverse_tree(dependency):
 
 
 dependencies = traverse_list('science-packs')
-dependencies = traverse_tree('science-packs')
-
-pprint.pprint(dependencies, width=1)
+[print(d) for d in dependencies]
