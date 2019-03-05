@@ -15,11 +15,9 @@ print(science_packs)
 
 
 def get_dependencies(recipe):
-    matching = [r for r in recipes.keys() if recipe in r]
-    dependencies = []
-    for r in matching:
-        dependencies += recipes[r]
-    return dependencies
+    if recipe == 'solid-fuel':
+        return ['heavy-oil', 'light-oil', 'petroleum-gas']
+    return recipes.get(recipe, [])
 
 
 dependencies = science_packs
