@@ -13,7 +13,7 @@ with open('data/recipes.csv') as handle:
         recipes[row[0]] = row[1:]
 
 science_packs = [r for r in recipes.keys() if 'science-pack' in r]
-print(science_packs)
+science_packs += ['satellite', 'rocket-part']
 recipes['science-packs'] = science_packs
 
 

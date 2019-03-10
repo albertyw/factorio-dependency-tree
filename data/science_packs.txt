@@ -5,6 +5,8 @@ chemical-science-pack
 military-science-pack
 production-science-pack
 utility-science-pack
+satellite
+rocket-part
 copper-plate
 iron-gear-wheel
 inserter
@@ -21,6 +23,11 @@ rail
 low-density-structure
 processing-unit
 flying-robot-frame
+solar-panel
+accumulator
+radar
+rocket-fuel
+rocket-control-unit
 copper-ore
 iron-plate
 electronic-circuit
@@ -39,6 +46,7 @@ iron-stick
 sulfuric-acid
 electric-engine-unit
 battery
+speed-module
 iron-ore
 sulfur
 water
