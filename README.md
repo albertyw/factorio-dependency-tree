@@ -4,6 +4,17 @@ Factorio Dependency Tree
 Resource and Tech Dependencies
 
 
+Data
+----
+
+ - [data/recipes.csv](https://github.com/albertyw/factorio-dependency-tree/blob/master/data/recipes.csv)
+   is a CSV file of all recipes.  The first column is the product; the later columns are required to produce the product.
+ - [data/science_packs.csv](https://github.com/albertyw/factorio-dependency-tree/blob/master/data/science_packs.csv)
+   is a CSV file for all recipes required to produce science packs.
+ - [data/technology.csv](https://github.com/albertyw/factorio-dependency-tree/blob/master/data/technology.csv)
+   is a CSV file of all technologies.  The first column is the technology to be researched; the later columns are prerequisite technology requirements.
+
+
 Getting raw data
 ----------------
 
