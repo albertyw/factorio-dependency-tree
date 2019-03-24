@@ -43,7 +43,15 @@ def traverse_tree(dependency):
     children = [traverse_tree(d) for d in children]
     return {dependency: children}
 
+
+def save_tree(dependencies):
+    with open('data/science_packs.csv', 'w') as handle:
+        writer = csv.writer(handle, lineterminator="\n")
+        for row in dependencies:
+            writer.writerow(row)
+
+
 recipes = read_recipes()
 get_science_packs(recipes)
 dependencies = traverse_list('science-packs', recipes, [])
-[print(d) for d in dependencies]
+save_tree(dependencies)
