@@ -4,16 +4,18 @@ import os
 from slpp import slpp as lua
 
 
-files = os.listdir('raw/recipe')
-recipes_string = ''
-for filename in files:
-    with open('raw/recipe/%s' % filename, 'r') as handle:
-        recipes_string += handle.read() + ','
+def read_recipes():
+    files = os.listdir('raw/recipe')
+    recipes_string = ''
+    for filename in files:
+        with open('raw/recipe/%s' % filename, 'r') as handle:
+            recipes_string += handle.read() + ','
 
-recipes_string = '{' + recipes_string[:-1] + '}'
-recipes = lua.decode(recipes_string)
-recipes = [r for d in recipes for r in d]
-recipes = [r for r in recipes if r != ')']
+    recipes_string = '{' + recipes_string[:-1] + '}'
+    recipes = lua.decode(recipes_string)
+    recipes = [r for d in recipes for r in d]
+    recipes = [r for r in recipes if r != ')']
+    return recipes
 
 
 def return_recipe_dependency_tree(recipes):
@@ -49,7 +51,7 @@ def save_recipe_dependency_tree(tree):
         for row in matrix:
             writer.writerow(row)
 
-
+recipes = read_recipes()
 tree = return_recipe_dependency_tree(recipes)
 save_recipe_dependency_tree(tree)
 print('Wrote %s items' % len(tree))
