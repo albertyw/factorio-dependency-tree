@@ -51,6 +51,7 @@ def save_recipe_dependency_tree(tree):
         for row in matrix:
             writer.writerow(row)
 
+
 recipes = read_recipes()
 tree = return_recipe_dependency_tree(recipes)
 save_recipe_dependency_tree(tree)

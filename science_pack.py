@@ -2,9 +2,7 @@
 Generate a list of all materials needed to produce science packs
 """
 
-import copy
 import csv
-import pprint
 
 
 def read_recipes():
