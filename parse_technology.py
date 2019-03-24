@@ -31,7 +31,7 @@ def save_tech_dependency_tree(tree):
     matrix = sorted(matrix, key=lambda x: x[0])
     matrix = sorted(matrix, key=lambda x: len(x))
     with open('data/technology.csv', 'w') as handle:
-        writer = csv.writer(handle)
+        writer = csv.writer(handle, lineterminator="\n")
         for row in matrix:
             writer.writerow(row)
 
