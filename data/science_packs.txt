@@ -1,53 +1,53 @@
-science-packs
-automation-science-pack
-logistic-science-pack
-chemical-science-pack
-military-science-pack
-production-science-pack
-utility-science-pack
-satellite
-rocket-part
-copper-plate
-iron-gear-wheel
-inserter
-transport-belt
-engine-unit
-advanced-circuit
-solid-fuel
-piercing-rounds-magazine
-grenade
-stone-wall
-electric-furnace
-productivity-module
-rail
-low-density-structure
-processing-unit
-flying-robot-frame
-solar-panel
-accumulator
-radar
-rocket-fuel
-rocket-control-unit
-copper-ore
-iron-plate
-electronic-circuit
-steel-plate
-pipe
-plastic-bar
-copper-cable
-heavy-oil
-light-oil
-petroleum-gas
-firearm-magazine
-coal
-stone-brick
-stone
-iron-stick
-sulfuric-acid
-electric-engine-unit
-battery
-speed-module
-iron-ore
-sulfur
-water
-lubricant
+['science-packs', 'automation-science-pack', 'logistic-science-pack', 'chemical-science-pack', 'military-science-pack', 'production-science-pack', 'utility-science-pack', 'satellite', 'rocket-part']
+['automation-science-pack', 'copper-plate', 'iron-gear-wheel']
+['copper-plate', 'copper-ore']
+['copper-ore']
+['iron-gear-wheel', 'iron-plate']
+['iron-plate', 'iron-ore']
+['iron-ore']
+['logistic-science-pack', 'inserter', 'transport-belt']
+['inserter', 'electronic-circuit', 'iron-gear-wheel', 'iron-plate']
+['electronic-circuit', 'iron-plate', 'copper-cable']
+['copper-cable', 'copper-plate']
+['transport-belt', 'iron-plate', 'iron-gear-wheel']
+['chemical-science-pack', 'engine-unit', 'advanced-circuit', 'solid-fuel']
+['engine-unit', 'steel-plate', 'iron-gear-wheel', 'pipe']
+['steel-plate', 'iron-plate']
+['pipe', 'iron-plate']
+['advanced-circuit', 'electronic-circuit', 'plastic-bar', 'copper-cable']
+['plastic-bar', 'petroleum-gas', 'coal']
+['petroleum-gas']
+['coal']
+['solid-fuel', 'heavy-oil', 'light-oil', 'petroleum-gas']
+['heavy-oil']
+['light-oil']
+['military-science-pack', 'piercing-rounds-magazine', 'grenade', 'stone-wall']
+['piercing-rounds-magazine', 'firearm-magazine', 'steel-plate', 'copper-plate']
+['firearm-magazine', 'iron-plate']
+['grenade', 'iron-plate', 'coal']
+['stone-wall', 'stone-brick']
+['stone-brick', 'stone']
+['stone']
+['production-science-pack', 'electric-furnace', 'productivity-module', 'rail']
+['electric-furnace', 'steel-plate', 'advanced-circuit', 'stone-brick']
+['productivity-module', 'advanced-circuit', 'electronic-circuit']
+['rail', 'stone', 'iron-stick', 'steel-plate']
+['iron-stick', 'iron-plate']
+['utility-science-pack', 'low-density-structure', 'processing-unit', 'flying-robot-frame']
+['low-density-structure', 'steel-plate', 'copper-plate', 'plastic-bar']
+['processing-unit', 'electronic-circuit', 'advanced-circuit', 'sulfuric-acid']
+['sulfuric-acid', 'sulfur', 'iron-plate', 'water']
+['sulfur', 'water', 'petroleum-gas']
+['water']
+['flying-robot-frame', 'electric-engine-unit', 'battery', 'steel-plate', 'electronic-circuit']
+['electric-engine-unit', 'engine-unit', 'lubricant', 'electronic-circuit']
+['lubricant', 'heavy-oil']
+['battery', 'sulfuric-acid', 'iron-plate', 'copper-plate']
+['satellite', 'low-density-structure', 'solar-panel', 'accumulator', 'radar', 'processing-unit', 'rocket-fuel']
+['solar-panel', 'steel-plate', 'electronic-circuit', 'copper-plate']
+['accumulator', 'iron-plate', 'battery']
+['radar', 'electronic-circuit', 'iron-gear-wheel', 'iron-plate']
+['rocket-fuel', 'solid-fuel']
+['rocket-part', 'rocket-control-unit', 'low-density-structure', 'rocket-fuel']
+['rocket-control-unit', 'processing-unit', 'speed-module']
+['speed-module', 'advanced-circuit', 'electronic-circuit']

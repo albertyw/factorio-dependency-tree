@@ -28,13 +28,15 @@ def get_dependencies(recipe, recipes):
     return recipes.get(recipe, [])
 
 
-def traverse_list(dependency, recipes):
-    dependencies = [dependency]
-    i = 0
-    while i < len(dependencies):
-        dependencies += [r for r in get_dependencies(dependencies[i], recipes) if r not in dependencies]
-        i += 1
-    return dependencies
+def traverse_list(recipe, recipes, data):
+    dependencies = get_dependencies(recipe, recipes)
+    data.append([recipe] + dependencies)
+    for dependency in dependencies:
+        if dependency in [d[0] for d in data]:
+            continue
+        data = traverse_list(dependency, recipes, data)
+    return data
+
 
 def traverse_tree(dependency):
     children = get_dependencies(dependency)
@@ -43,5 +45,5 @@ def traverse_tree(dependency):
 
 recipes = read_recipes()
 get_science_packs(recipes)
-dependencies = traverse_list('science-packs', recipes)
+dependencies = traverse_list('science-packs', recipes, [])
 [print(d) for d in dependencies]
