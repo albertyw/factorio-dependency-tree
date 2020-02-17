@@ -1,50 +1,50 @@
-item,item rate,factory,count,modules,beacon module,beacon count,power
-chemical-science-pack,60,assembling-machine-3,9.6,///,,,3605000
-production-science-pack,60,assembling-machine-3,5.6,///,,,2105000
-electric-furnace,20,assembling-machine-3,1.4,///,,,508333.4
-stone-brick,200,electric-furnace,5.4,/,,,964000
-productivity-module,20,assembling-machine-3,4,///,,,1500000
-rail,600,assembling-machine-3,2,///,,,750000
-stone,700,electric-mining-drill,23.4,//,,,2102000
-iron-stick,300,assembling-machine-3,1,///,,,375000
-logistic-science-pack,60,assembling-machine-3,4.8,///,,,1802500
-inserter,60,assembling-machine-3,0.4,///,,,157500
-transport-belt,60,assembling-machine-3,0.2,///,,,85000
-automation-science-pack,60,assembling-machine-3,4,///,,,1500000
-utility-science-pack,60,assembling-machine-3,5.6,///,,,2105000
-flying-robot-frame,20,assembling-machine-3,5.4,///,,,2008333.4
-electric-engine-unit,20,assembling-machine-3,2.7,///,,,1004166.7
-engine-unit,80,assembling-machine-3,10.7,///,,,4004166.7
-pipe,160,assembling-machine-3,1.1,///,,,411666.7
-lubricant,300,chemical-plant,0.5,//,,,108500
-rocket-launch,60,rocket-silo,0.4,,,,0
-rocket-part,6,rocket-silo,0.4,///,,,90802.1
-rocket-control-unit,60,assembling-machine-3,24,///,,,9000000
-speed-module,60,assembling-machine-3,12,///,,,4500000
-satellite,0.06,assembling-machine-3,0.1,///,,,13950
-low-density-structure,126,assembling-machine-3,33.6,///,,,12605000
-solar-panel,6,assembling-machine-3,0.8,///,,,302500
-steel-plate,882,electric-furnace,117.6,/,,,21170400
-accumulator,6,assembling-machine-3,0.8,///,,,302500
-battery,70,chemical-plant,4.7,//,,,982333.4
-radar,0.3,assembling-machine-3,0.1,///,,,13225
-iron-gear-wheel,231.5,assembling-machine-3,1.6,///,,,584458.4
-processing-unit,106,assembling-machine-3,14.2,///,,,5310833.4
-advanced-circuit,802,assembling-machine-3,64.2,///,,,24070500
-electronic-circuit,4375.5,assembling-machine-3,29.2,///,,,10949125
-plastic-bar,2234,chemical-plant,18.7,//,,,3912183.4
-coal,1117,electric-mining-drill,37.3,//,,,3353300
-copper-cable,16334.5,assembling-machine-3,54.5,///,,,20425020.9
-copper-plate,10847.25,electric-furnace,289.3,/,,,52071240
-copper-ore,10847.25,electric-mining-drill,361.6,//,,,32543025
-sulfuric-acid,1930,chemical-plant,0.7,//,,,137596.7
-sulfur,223,chemical-plant,1.9,//,,,391241.7
-iron-plate,9772.1,electric-furnace,260.6,/,,,46908544
-iron-ore,9772.1,electric-mining-drill,325.8,//,,,29317090
-rocket-fuel,63,assembling-machine-3,25.2,///,,,9460000
-solid-fuel,630,,,,,,
-heavy-oil,7808.974,,,,,,
-light-oil,19687.885,,,,,,
-petroleum-gas,25685,,,,,,
-water,41212.564,offshore-pump,0.6,,,,0
-crude-oil,31235.897,,,,,,
+                    item, item rate,               factory, count, modules, beacon module, beacon count,      power
+   chemical-science-pack,        60,  assembling-machine-3,   9.6,     ///,              ,             ,    3605000
+ production-science-pack,        60,  assembling-machine-3,   5.6,     ///,              ,             ,    2105000
+        electric-furnace,        20,  assembling-machine-3,   1.4,     ///,              ,             ,   508333.4
+             stone-brick,       200,      electric-furnace,   5.4,       /,              ,             ,     964000
+     productivity-module,        20,  assembling-machine-3,     4,     ///,              ,             ,    1500000
+                    rail,       600,  assembling-machine-3,     2,     ///,              ,             ,     750000
+                   stone,       700, electric-mining-drill,  23.4,      //,              ,             ,    2102000
+              iron-stick,       300,  assembling-machine-3,     1,     ///,              ,             ,     375000
+   logistic-science-pack,        60,  assembling-machine-3,   4.8,     ///,              ,             ,    1802500
+                inserter,        60,  assembling-machine-3,   0.4,     ///,              ,             ,     157500
+          transport-belt,        60,  assembling-machine-3,   0.2,     ///,              ,             ,      85000
+ automation-science-pack,        60,  assembling-machine-3,     4,     ///,              ,             ,    1500000
+    utility-science-pack,        60,  assembling-machine-3,   5.6,     ///,              ,             ,    2105000
+      flying-robot-frame,        20,  assembling-machine-3,   5.4,     ///,              ,             ,  2008333.4
+    electric-engine-unit,        20,  assembling-machine-3,   2.7,     ///,              ,             ,  1004166.7
+             engine-unit,        80,  assembling-machine-3,  10.7,     ///,              ,             ,  4004166.7
+                    pipe,       160,  assembling-machine-3,   1.1,     ///,              ,             ,   411666.7
+               lubricant,       300,        chemical-plant,   0.5,      //,              ,             ,     108500
+           rocket-launch,        60,           rocket-silo,   0.4,        ,              ,             ,          0
+             rocket-part,         6,           rocket-silo,   0.4,     ///,              ,             ,    90802.1
+     rocket-control-unit,        60,  assembling-machine-3,    24,     ///,              ,             ,    9000000
+            speed-module,        60,  assembling-machine-3,    12,     ///,              ,             ,    4500000
+               satellite,      0.06,  assembling-machine-3,   0.1,     ///,              ,             ,      13950
+   low-density-structure,       126,  assembling-machine-3,  33.6,     ///,              ,             ,   12605000
+             solar-panel,         6,  assembling-machine-3,   0.8,     ///,              ,             ,     302500
+             steel-plate,       882,      electric-furnace, 117.6,       /,              ,             ,   21170400
+             accumulator,         6,  assembling-machine-3,   0.8,     ///,              ,             ,     302500
+                 battery,        70,        chemical-plant,   4.7,      //,              ,             ,   982333.4
+                   radar,       0.3,  assembling-machine-3,   0.1,     ///,              ,             ,      13225
+         iron-gear-wheel,     231.5,  assembling-machine-3,   1.6,     ///,              ,             ,   584458.4
+         processing-unit,       106,  assembling-machine-3,  14.2,     ///,              ,             ,  5310833.4
+        advanced-circuit,       802,  assembling-machine-3,  64.2,     ///,              ,             ,   24070500
+      electronic-circuit,    4375.5,  assembling-machine-3,  29.2,     ///,              ,             ,   10949125
+             plastic-bar,      2234,        chemical-plant,  18.7,      //,              ,             ,  3912183.4
+                    coal,      1117, electric-mining-drill,  37.3,      //,              ,             ,    3353300
+            copper-cable,   16334.5,  assembling-machine-3,  54.5,     ///,              ,             , 20425020.9
+            copper-plate,  10847.25,      electric-furnace, 289.3,       /,              ,             ,   52071240
+              copper-ore,  10847.25, electric-mining-drill, 361.6,      //,              ,             ,   32543025
+           sulfuric-acid,      1930,        chemical-plant,   0.7,      //,              ,             ,   137596.7
+                  sulfur,       223,        chemical-plant,   1.9,      //,              ,             ,   391241.7
+              iron-plate,    9772.1,      electric-furnace, 260.6,       /,              ,             ,   46908544
+                iron-ore,    9772.1, electric-mining-drill, 325.8,      //,              ,             ,   29317090
+             rocket-fuel,        63,  assembling-machine-3,  25.2,     ///,              ,             ,    9460000
+              solid-fuel,       630,                      ,      ,        ,              ,             ,
+               heavy-oil,  7808.974,                      ,      ,        ,              ,             ,
+               light-oil, 19687.885,                      ,      ,        ,              ,             ,
+           petroleum-gas,     25685,                      ,      ,        ,              ,             ,
+                   water, 41212.564,         offshore-pump,   0.6,        ,              ,             ,          0
+               crude-oil, 31235.897,                      ,      ,        ,              ,             ,
