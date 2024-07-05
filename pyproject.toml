@@ -1,0 +1,14 @@
+[project]
+name = "factorio-dependency-tree"
+version = "1.0.0"
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    # Testing
+    "ruff",                   # Python linter
+]
+
+[tool.ruff]
+# https://docs.astral.sh/ruff/rules/
+lint.select = ["E", "F", "W", "A", "B", "COM", "N", "PLC", "PLE", "PLW"]
